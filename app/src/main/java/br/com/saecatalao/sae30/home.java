@@ -13,9 +13,9 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button botafatura = (Button) findViewById(R.id.home_button_fatura);
+        Button abrePerfil = (Button) findViewById(R.id.home_button_perfil);
 
-        botafatura.setOnClickListener(new View.OnClickListener() {
+        abrePerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //setContentView(R.layout.activity_perfil);

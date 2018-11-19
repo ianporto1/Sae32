@@ -137,7 +137,7 @@
         app:layout_constraintVertical_bias="0.576" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/perfil_button_voltar"
         android:layout_width="49dp"
         android:layout_height="38dp"
 
