@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Sae3.0</string>
     <string name="name_hint">Nome</string>
+    <string name="dados_cabecalho">Dados da sua Conta</string>
+    <string name="dados_nome">Nome</string>
+    <string name="dados_matricula">Matricula</string>
+    <string name="dados_vencimento">Vencimento</string>
+    <string name="dados_entrega">Entrega</string>
+    <string name="dados_telefone">Telefone</string>
+    <string name="dados_celular">Celular</string>
 </resources>

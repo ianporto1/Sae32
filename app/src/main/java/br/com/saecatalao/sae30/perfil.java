@@ -22,6 +22,16 @@ public class perfil extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button mostrarDados = (Button) findViewById(R.id.perfil_button_dados);
+
+        mostrarDados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(perfil.this, Dados.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
