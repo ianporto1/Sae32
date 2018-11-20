@@ -63,8 +63,8 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <Button
-        android:id="@+id/home_button_perfil"
-        android:layout_width="28"
+        android:id="@+id/home_perfil"
+        android:layout_width="28dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
