@@ -13,9 +13,9 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button botafatura = (Button) findViewById(R.id.home_button_fatura);
+        Button abrePerfil = (Button) findViewById(R.id.home_button_perfil);
 
-        botafatura.setOnClickListener(new View.OnClickListener() {
+        abrePerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //setContentView(R.layout.activity_perfil);
@@ -23,6 +23,27 @@ public class home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button abreFatura = (Button) findViewById(R.id.home_button_fatura);
+
+        abreFatura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this, fatura.class);
+                startActivity(intent);
+            }
+        });
+
+        Button abreTarifa = (Button) findViewById(R.id.home_button_tarifa);
+
+        abreTarifa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this, Tarifas.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
