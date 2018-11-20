@@ -89,9 +89,9 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/home_botao_perfil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="90dp">
+        tools:layout_editor_absoluteY="83dp">
 
     </android.support.constraint.ConstraintLayout>
 
