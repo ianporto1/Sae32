@@ -24,5 +24,26 @@ public class home extends AppCompatActivity {
             }
         });
 
+        Button abreFatura = (Button) findViewById(R.id.home_button_fatura);
+
+        abreFatura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this, fatura.class);
+                startActivity(intent);
+            }
+        });
+
+        Button abreTarifa = (Button) findViewById(R.id.home_button_tarifa);
+
+        abreTarifa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this, Tarifas.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

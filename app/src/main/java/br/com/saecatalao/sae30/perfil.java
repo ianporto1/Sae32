@@ -28,7 +28,27 @@ public class perfil extends AppCompatActivity {
         mostrarDados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(perfil.this, Dados.class);
+                Intent intent = new Intent(perfil.this, Dados.class); //mudar os intents pro nome da classe a ser aberta
+                startActivity(intent);
+            }
+        });
+
+        Button mostrarCertidao = (Button) findViewById(R.id.perfil_button_certidao);
+
+        mostrarCertidao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(perfil.this, CertidaoPositiva.class);
+                startActivity(intent);
+            }
+        });
+
+        Button mostarQuitadas = (Button) findViewById(R.id.perfil_button_fatura);
+
+        mostarQuitadas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(perfil.this, faturas_quitadas.class);
                 startActivity(intent);
             }
         });

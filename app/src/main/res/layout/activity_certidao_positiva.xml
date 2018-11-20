@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".faturas_quitadas"
-    android:background="@drawable/fatura_positiva">
+    android:background="@drawable/certidaopositiva"
+    tools:context=".CertidaoPositiva">
 
     <Button
-        android:id="@+id/button_quitadas_voltar"
+        android:id="@+id/button_certidao_voltar"
         android:layout_width="41dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
