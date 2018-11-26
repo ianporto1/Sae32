@@ -24,5 +24,15 @@ public class Dados extends AppCompatActivity {
         });
 
         //Botão editar depois que tiver uma tela pra edição
+
+        Button editarPerfil = (Button) findViewById(R.id.button_dados_editar);
+
+        editarPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dados.this, EditarDados.class);
+                startActivity(intent);
+            }
+        });
     }
 }
