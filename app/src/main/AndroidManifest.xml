@@ -17,7 +17,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".home" />
-        <activity android:name=".perfil"></activity>
+        <activity android:name=".perfil" />
+        <activity android:name=".Dados" />
+        <activity android:name=".Tarifas" />
+        <activity android:name=".fatura" />
+        <activity android:name=".faturas_quitadas" />
+        <activity android:name=".CertidaoPositiva" />
+        <activity android:name=".EditarDados" />
+        <activity android:name=".EditarDadoNome" />
+        <activity android:name=".EditarDadoSenha" />
+        <activity android:name=".EditarDadoTelefone"></activity>
     </application>
 
 </manifest>
