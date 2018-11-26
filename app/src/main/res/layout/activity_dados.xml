@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_telefone" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/view_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -134,7 +134,7 @@
         app:layout_constraintStart_toEndOf="@+id/text_nome" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/view_mat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -147,7 +147,7 @@
         app:layout_constraintStart_toEndOf="@+id/text_matricula" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/view_venc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -160,7 +160,7 @@
         app:layout_constraintStart_toEndOf="@+id/text_vencimento" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/view_ent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -173,7 +173,7 @@
         app:layout_constraintStart_toEndOf="@+id/text_entrega" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/view_tel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -186,7 +186,7 @@
         app:layout_constraintStart_toEndOf="@+id/text_telefone" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/view_cel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

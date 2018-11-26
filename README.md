@@ -8,6 +8,7 @@ Integrantes do grupo:
 - Ian Gomes Porto
 - Vitor de Jesus Aguiar
 - Mateus Bonfim de Souza
-- Gabriel
+- Gabriel Silva Martins
 - Lucas Tatsumi Fuzinaga
-- Diego
+- Diego Carvalho da Silva
+
