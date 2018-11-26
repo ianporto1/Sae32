@@ -13,7 +13,7 @@ public class Dados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dados);
 
-        Button voltarPerfil = (Button) findViewById(R.id.button_dados_voltar);
+        Button voltarPerfil = findViewById(R.id.button_dados_voltar);
 
         voltarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,9 +23,8 @@ public class Dados extends AppCompatActivity {
             }
         });
 
-        //Botão editar depois que tiver uma tela pra edição
 
-        Button editarPerfil = (Button) findViewById(R.id.button_dados_editar);
+        Button editarPerfil = findViewById(R.id.button_dados_editar);
 
         editarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
