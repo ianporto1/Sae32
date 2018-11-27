@@ -51,6 +51,26 @@ public class EditarDados extends AppCompatActivity {
                 startActivity(telefone);
             }
         });
+
+        Button editarCelular = findViewById(R.id.button_editar_celular);
+
+        editarCelular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent celular = new Intent(EditarDados.this, EditarDadoCelular.class);
+                startActivity(celular);
+            }
+        });
+
+        Button editarEmail = findViewById(R.id.button_editar_email);
+
+        editarEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent email = new Intent(EditarDados.this, EditarDadoEmail.class);
+                startActivity(email);
+            }
+        });
     }
 
 }

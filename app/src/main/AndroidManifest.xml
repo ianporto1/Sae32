@@ -26,7 +26,9 @@
         <activity android:name=".EditarDados" />
         <activity android:name=".EditarDadoNome" />
         <activity android:name=".EditarDadoSenha" />
-        <activity android:name=".EditarDadoTelefone"></activity>
+        <activity android:name=".EditarDadoTelefone" />
+        <activity android:name=".EditarDadoCelular" />
+        <activity android:name=".EditarDadoEmail"></activity>
     </application>
 
 </manifest>
