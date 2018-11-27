@@ -15,38 +15,38 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button abrePerfil = (Button) findViewById(R.id.home_button_perfil);
+        Button abrePerfil = findViewById(R.id.home_button_perfil);
 
         abrePerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //setContentView(R.layout.activity_perfil);
-                Intent intent = new Intent(home.this, perfil.class);
-                startActivity(intent);
+                Intent perfil = new Intent(home.this, perfil.class);
+                startActivity(perfil);
             }
         });
 
-        Button abreFatura = (Button) findViewById(R.id.home_button_fatura);
+        Button abreFatura = findViewById(R.id.home_button_fatura);
 
         abreFatura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(home.this, fatura.class);
-                startActivity(intent);
+                Intent fatura = new Intent(home.this, fatura.class);
+                startActivity(fatura);
             }
         });
 
-        Button abreTarifa = (Button) findViewById(R.id.home_button_tarifa);
+        Button abreTarifa = findViewById(R.id.home_button_tarifa);
 
         abreTarifa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(home.this, Tarifas.class);
-                startActivity(intent);
+                Intent tarifa = new Intent(home.this, Tarifas.class);
+                startActivity(tarifa);
             }
         });
 
-        Button logOut = (Button) findViewById(R.id.home_button_logout);
+        Button logOut = findViewById(R.id.home_button_logout);
 
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +66,6 @@ public class home extends AppCompatActivity {
                         }).setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(home.this, MainActivity.class);
                         finish();
                     }
                 });

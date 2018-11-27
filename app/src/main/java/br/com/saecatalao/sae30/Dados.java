@@ -18,7 +18,6 @@ public class Dados extends AppCompatActivity {
         voltarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dados.this, perfil.class);
                 finish();
             }
         });
@@ -29,8 +28,8 @@ public class Dados extends AppCompatActivity {
         editarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dados.this, EditarDados.class);
-                startActivity(intent);
+                Intent editar = new Intent(Dados.this, EditarDados.class);
+                startActivity(editar);
             }
         });
     }

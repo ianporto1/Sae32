@@ -18,7 +18,6 @@ public class EditarDados extends AppCompatActivity {
         editarVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EditarDados.this, Dados.class);
                 finish();
             }
         });
@@ -28,8 +27,8 @@ public class EditarDados extends AppCompatActivity {
         editarNome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EditarDados.this, EditarDadoNome.class);
-                startActivity(intent);
+                Intent nome = new Intent(EditarDados.this, EditarDadoNome.class);
+                startActivity(nome);
             }
         });
 
@@ -38,8 +37,8 @@ public class EditarDados extends AppCompatActivity {
         editarSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EditarDados.this, EditarDadoSenha.class);
-                startActivity(intent);
+                Intent senha = new Intent(EditarDados.this, EditarDadoSenha.class);
+                startActivity(senha);
             }
         });
 
@@ -48,8 +47,8 @@ public class EditarDados extends AppCompatActivity {
         editarTelefone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EditarDados.this, EditarDadoTelefone.class);
-                startActivity(intent);
+                Intent telefone = new Intent(EditarDados.this, EditarDadoTelefone.class);
+                startActivity(telefone);
             }
         });
     }

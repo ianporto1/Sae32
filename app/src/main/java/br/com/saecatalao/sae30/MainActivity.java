@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button botaoEntrar = (Button) findViewById(R.id.login_button_entrar);
+        Button botaoEntrar = findViewById(R.id.login_button_entrar);
 
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //setContentView(R.layout.activity_home);
-                Intent intent = new Intent(MainActivity.this, home.class);
-                startActivity(intent);
+                Intent entrar = new Intent(MainActivity.this, home.class);
+                startActivity(entrar);
             }
         });
     }

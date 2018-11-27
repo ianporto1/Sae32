@@ -13,12 +13,11 @@ public class Tarifas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tarifas);
 
-        Button voltarHome = (Button) findViewById(R.id.button_tarifas_voltar);
+        Button voltarHome = findViewById(R.id.button_tarifas_voltar);
 
         voltarHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tarifas.this, home.class);
                 finish();
             }
         });

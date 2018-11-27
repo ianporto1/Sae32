@@ -20,7 +20,6 @@ public class EditarDadoTelefone extends AppCompatActivity {
         telefoneVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EditarDadoTelefone.this, EditarDados.class);
                 finish();
             }
         });
@@ -40,7 +39,6 @@ public class EditarDadoTelefone extends AppCompatActivity {
                         }).setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(EditarDadoTelefone.this, EditarDados.class);
                         finish();
                     }
                 });

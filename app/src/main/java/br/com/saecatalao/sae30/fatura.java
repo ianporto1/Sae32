@@ -13,12 +13,11 @@ public class fatura extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatura);
 
-        Button voltarHome = (Button) findViewById(R.id.button_fatura_voltar);
+        Button voltarHome = findViewById(R.id.button_fatura_voltar);
 
         voltarHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(fatura.this, home.class);
                 finish();
             }
         });
