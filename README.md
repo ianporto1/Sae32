@@ -11,4 +11,3 @@ Integrantes do grupo:
 - Gabriel Silva Martins
 - Lucas Tatsumi Fuzinaga
 - Diego Carvalho da Silva
-

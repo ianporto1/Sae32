@@ -13,43 +13,42 @@ public class perfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
 
-        Button voltarHome = (Button) findViewById(R.id.perfil_button_voltar);
+        Button voltarHome = findViewById(R.id.perfil_button_voltar);
 
         voltarHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(perfil.this, home.class);
                 finish();
             }
         });
 
-        Button mostrarDados = (Button) findViewById(R.id.perfil_button_dados);
+        Button abrirPerfil = findViewById(R.id.perfil_button_dados);
 
-        mostrarDados.setOnClickListener(new View.OnClickListener() {
+        abrirPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(perfil.this, Dados.class); //mudar os intents pro nome da classe a ser aberta
-                startActivity(intent);
+                Intent perfil = new Intent(perfil.this, Dados.class);
+                startActivity(perfil);
             }
         });
 
-        Button mostrarCertidao = (Button) findViewById(R.id.perfil_button_certidao);
+        Button abrirQuitadas = findViewById(R.id.perfil_button_fatura);
 
-        mostrarCertidao.setOnClickListener(new View.OnClickListener() {
+        abrirQuitadas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(perfil.this, CertidaoPositiva.class);
-                startActivity(intent);
+                Intent quitadas = new Intent(perfil.this, faturas_quitadas.class);
+                startActivity(quitadas);
             }
         });
 
-        Button mostarQuitadas = (Button) findViewById(R.id.perfil_button_fatura);
+        Button abrirCertidao = findViewById(R.id.perfil_button_certidao);
 
-        mostarQuitadas.setOnClickListener(new View.OnClickListener() {
+        abrirCertidao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(perfil.this, faturas_quitadas.class);
-                startActivity(intent);
+                Intent certidao = new Intent(perfil.this, CertidaoPositiva.class);
+                startActivity(certidao);
             }
         });
     }

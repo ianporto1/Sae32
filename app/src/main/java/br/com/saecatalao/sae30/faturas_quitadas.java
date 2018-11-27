@@ -13,12 +13,11 @@ public class faturas_quitadas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faturas_quitadas);
 
-        Button voltarPerfil = (Button) findViewById(R.id.button_quitadas_voltar);
+        Button voltarPerfil = findViewById(R.id.button_quitadas_voltar);
 
         voltarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(faturas_quitadas.this, perfil.class);
                 finish();
             }
         });

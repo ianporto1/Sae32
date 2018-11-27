@@ -13,16 +13,24 @@ public class Dados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dados);
 
-        Button voltarPerfil = (Button) findViewById(R.id.button_dados_voltar);
+        Button voltarPerfil = findViewById(R.id.button_dados_voltar);
 
         voltarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dados.this, perfil.class);
                 finish();
             }
         });
 
-        //Botão editar depois que tiver uma tela pra edição
+
+        Button editarPerfil = findViewById(R.id.button_dados_editar);
+
+        editarPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editar = new Intent(Dados.this, EditarDados.class);
+                startActivity(editar);
+            }
+        });
     }
 }
