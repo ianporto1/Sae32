@@ -77,5 +77,22 @@ public class home extends AppCompatActivity {
         });
 
 
+        //criação do botão para abrir o layot notificação
+
+        Button abreNotificao =  findViewById(R.id.btn_notificacao);
+
+        abreNotificao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intencao = new Intent(home.this, Notificacao.class);
+                startActivity(intencao);
+
+            }
+        });
+
+
+
+
     }
 }
