@@ -49,7 +49,7 @@ public class EditarDadoTelefone extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         TextView editTelefone = findViewById(R.id.edit_telefone);
                         int editT = Integer.parseInt(editTelefone.getText().toString());//Casting de String para integer porque a variavel telefone é do tipo integer
-                        user1.setCelular(editT);
+                        user1.setTelefone(editT);
                         alert("Salvo com sucesso");
                         finish();
                     }
