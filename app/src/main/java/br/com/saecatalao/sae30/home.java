@@ -75,7 +75,7 @@ public class home extends AppCompatActivity {
             }
         });
 
-        Button logOut = (Button) findViewById(R.id.home_button_logout);
+        Button logout = (Button) findViewById(R.id.home_button_logout);
 
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
