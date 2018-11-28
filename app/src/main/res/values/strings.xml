@@ -21,4 +21,8 @@
     <string name="email_hint">example@example.com</string>
     <string name="view_email_edit">Digite o novo endereço de email</string>
     <string name="view_dados_email">Como o seu email está salvo</string>
+    <string name="sobrenome_hint">Sobrenome</string>
+    <string name="view_sobrenome_edita">Digite o novo sobrenome</string>
+    <string name="view_welcome">Bem Vindo</string>
+    <string name="dados_email">Email</string>
 </resources>

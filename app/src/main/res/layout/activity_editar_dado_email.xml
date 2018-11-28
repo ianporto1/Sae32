@@ -57,7 +57,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="a@a.com"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_edit_email" />
 
     <TextView
-        android:id="@+id/text_display_edita"
+        android:id="@+id/text_display_edita_n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -94,5 +93,5 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_display_edita" />
+        app:layout_constraintTop_toBottomOf="@+id/text_display_edita_n" />
 </android.support.constraint.ConstraintLayout>

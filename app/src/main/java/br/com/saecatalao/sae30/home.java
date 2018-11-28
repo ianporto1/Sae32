@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import static br.com.saecatalao.sae30.Declaracoes.user1;
 
 public class home extends AppCompatActivity {
 
@@ -15,12 +18,14 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        final TextView nomeHome = findViewById(R.id.text_show_nome);
+        nomeHome.setText(user1.nome);
+
         Button abrePerfil = findViewById(R.id.home_button_perfil);
 
         abrePerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //setContentView(R.layout.activity_perfil);
                 Intent perfil = new Intent(home.this, perfil.class);
                 startActivity(perfil);
             }
@@ -74,7 +79,5 @@ public class home extends AppCompatActivity {
                 alert.show();
             }
         });
-
-
     }
 }

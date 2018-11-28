@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import static br.com.saecatalao.sae30.Declaracoes.user1;
 
 public class EditarDadoNome extends AppCompatActivity {
 
@@ -14,6 +17,9 @@ public class EditarDadoNome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_dado_nome);
+
+        TextView nomeView = findViewById(R.id.text_display_nome);
+        nomeView.setText(user1.nome + " " + user1.sobrenome);
 
         Button nomeVoltar = findViewById(R.id.button_editar_nome_voltar);
 
@@ -39,6 +45,12 @@ public class EditarDadoNome extends AppCompatActivity {
                         }).setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        TextView editNome = findViewById(R.id.edit_nome);
+                        String editN = editNome.getText().toString();
+                        user1.setNome(editN);
+                        TextView editSNome = findViewById(R.id.edit_sobrenome);
+                        String editSN = editSNome.getText().toString();
+                        user1.setSobrenome(editSN);
                         finish();
                     }
                 });
