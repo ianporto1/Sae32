@@ -19,7 +19,7 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         final TextView nomeHome = findViewById(R.id.text_show_nome);
-        nomeHome.setText(user1.nome);
+        nomeHome.setText(user1.getNome());
 
         Button abrePerfil = findViewById(R.id.home_button_perfil);
 

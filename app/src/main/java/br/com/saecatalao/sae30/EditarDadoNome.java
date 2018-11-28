@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
 
@@ -51,6 +52,7 @@ public class EditarDadoNome extends AppCompatActivity {
                         TextView editSNome = findViewById(R.id.edit_sobrenome);
                         String editSN = editSNome.getText().toString();
                         user1.setSobrenome(editSN);
+                        alert("Salvo com sucesso!");
                         finish();
                     }
                 });
@@ -59,5 +61,9 @@ public class EditarDadoNome extends AppCompatActivity {
                 alert.show();
             }
         });
+    }
+
+    private void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 }

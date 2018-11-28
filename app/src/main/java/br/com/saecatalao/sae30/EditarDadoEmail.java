@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
 
@@ -20,7 +21,7 @@ public class EditarDadoEmail extends AppCompatActivity {
         TextView emailView = findViewById(R.id.text_display_email);
         emailView.setText(user1.email);
 
-        Button emailVoltar = findViewById(R.id.button_editar_email_voltar);
+        Button emailVoltar = findViewById(R.id.button_editar_email_voltar);//Declaração do botão para finalizar a atividade e voltar à tela anterior
 
         emailVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +35,7 @@ public class EditarDadoEmail extends AppCompatActivity {
         emailSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder a_builder = new AlertDialog.Builder(EditarDadoEmail.this);
+                AlertDialog.Builder a_builder = new AlertDialog.Builder(EditarDadoEmail.this);//Construtor de alertas para confirmar se o usuário quer realmente salvar os dados
                 a_builder.setMessage("Salvar Alterações?").setCancelable(false)
                         .setNegativeButton("Não", new DialogInterface.OnClickListener() {
                             @Override
@@ -47,6 +48,7 @@ public class EditarDadoEmail extends AppCompatActivity {
                         TextView editEmail = findViewById(R.id.edit_email);
                         String editE = editEmail.getText().toString();
                         user1.setEmail(editE);
+                        alert("Salvo com sucesso!");
                         finish();
                     }
                 });
@@ -55,5 +57,9 @@ public class EditarDadoEmail extends AppCompatActivity {
                 alert.show();
             }
         });
+    }
+
+    private void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 }

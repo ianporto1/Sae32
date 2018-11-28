@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
 
@@ -17,11 +18,11 @@ public class EditarDadoCelular extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_dado_celular);
 
-        TextView nomeView = findViewById(R.id.text_display_celular);
-        String cel = Integer.toString(user1.celular);
-        nomeView.setText(cel);
+        TextView celularView = findViewById(R.id.text_display_celular);
+        String cel = Integer.toString(user1.celular);//Casting de integer para string porque setText só compreende Strings
+        celularView.setText(cel);
 
-        Button celularVoltar = findViewById(R.id.button_editar_celular_voltar);
+        Button celularVoltar = findViewById(R.id.button_editar_celular_voltar);//Declaração do botão para finalizar a atividade e voltar à tela anterior
 
         celularVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,12 +31,12 @@ public class EditarDadoCelular extends AppCompatActivity {
             }
         });
 
-        Button celularSalvar = findViewById(R.id.button_celular_salvar);
+        Button celularSalvar = findViewById(R.id.button_celular_salvar);//Declaração do botão para salvar os dados alterados e voltar a tela anterior
 
         celularSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder a_builder = new AlertDialog.Builder(EditarDadoCelular.this);
+                AlertDialog.Builder a_builder = new AlertDialog.Builder(EditarDadoCelular.this);//Construtor de alertas para confirmar se o usuário quer salvar esses dados
                 a_builder.setMessage("Salvar Alterações?").setCancelable(false)
                         .setNegativeButton("Não", new DialogInterface.OnClickListener() {
                             @Override
@@ -46,8 +47,9 @@ public class EditarDadoCelular extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         TextView editCelular = findViewById(R.id.edit_celular);
-                        int editC = Integer.parseInt(editCelular.getText().toString());
+                        int editC = Integer.parseInt(editCelular.getText().toString());//Casting de String para integer porque a variavel celular é do tipo integer
                         user1.setCelular(editC);
+                        alert("Salvo com sucesso!");
                         finish();
                     }
                 });
@@ -56,5 +58,9 @@ public class EditarDadoCelular extends AppCompatActivity {
                 alert.show();
             }
         });
+    }
+
+    private void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 }

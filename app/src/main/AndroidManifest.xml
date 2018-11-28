@@ -45,4 +45,7 @@
             android:screenOrientation="portrait"></activity>
     </application>
 
+    <supports-screens
+        android:anyDensity="true"
+        ></supports-screens>
 </manifest>

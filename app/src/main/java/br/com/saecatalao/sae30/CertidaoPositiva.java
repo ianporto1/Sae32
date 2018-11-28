@@ -13,7 +13,7 @@ public class CertidaoPositiva extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certidao_positiva);
 
-        Button voltarPerfil = findViewById(R.id.button_certidao_voltar);
+        Button voltarPerfil = findViewById(R.id.button_certidao_voltar);//Declaração do botão para finalizar a atividade e voltar à tela anterior
 
         voltarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override

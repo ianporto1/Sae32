@@ -7,6 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import static br.com.saecatalao.sae30.Declaracoes.user1;
 
 public class EditarDadoTelefone extends AppCompatActivity {
 
@@ -14,6 +18,10 @@ public class EditarDadoTelefone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_dado_telefone);
+
+        TextView telefoneView = findViewById(R.id.text_display_telefone);
+        String tel = Integer.toString(user1.telefone);//Casting de integer para string porque setText só compreende Strings
+        telefoneView.setText(tel);
 
         Button telefoneVoltar = findViewById(R.id.button_editar_telefone_voltar);
 
@@ -39,6 +47,10 @@ public class EditarDadoTelefone extends AppCompatActivity {
                         }).setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        TextView editTelefone = findViewById(R.id.edit_telefone);
+                        int editT = Integer.parseInt(editTelefone.getText().toString());//Casting de String para integer porque a variavel telefone é do tipo integer
+                        user1.setCelular(editT);
+                        alert("Salvo com sucesso");
                         finish();
                     }
                 });
@@ -47,5 +59,9 @@ public class EditarDadoTelefone extends AppCompatActivity {
                 alert.show();
             }
         });
+    }
+
+    private void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 }
