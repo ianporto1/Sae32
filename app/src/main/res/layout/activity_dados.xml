@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="228dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/dados_cabecalho"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="@string/dados_nome"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,80 +121,108 @@
         app:layout_constraintTop_toBottomOf="@+id/text_telefone" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/view_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_nome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_nome" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_nome"
+        app:layout_constraintTop_toBottomOf="@+id/text_cabecalho" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/view_mat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_matricula"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_matricula" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_matricula"
+        app:layout_constraintTop_toBottomOf="@+id/view_nome" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/view_venc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_vencimento"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_vencimento" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_vencimento"
+        app:layout_constraintTop_toBottomOf="@+id/view_mat" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/view_ent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_entrega"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_entrega" />
+        app:layout_constraintStart_toEndOf="@+id/text_entrega"
+        app:layout_constraintTop_toBottomOf="@+id/view_venc" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/view_tel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_telefone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_telefone" />
+        app:layout_constraintStart_toEndOf="@+id/text_telefone"
+        app:layout_constraintTop_toBottomOf="@+id/view_ent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/view_cel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_celular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text_celular" />
+        app:layout_constraintStart_toEndOf="@+id/text_celular"
+        app:layout_constraintTop_toBottomOf="@+id/view_tel" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dados_email"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_celular" />
+
+    <TextView
+        android:id="@+id/view_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_email"
+        app:layout_constraintTop_toBottomOf="@+id/view_cel" />
 </android.support.constraint.ConstraintLayout>

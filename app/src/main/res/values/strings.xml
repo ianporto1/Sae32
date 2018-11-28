@@ -8,4 +8,21 @@
     <string name="dados_entrega">Entrega</string>
     <string name="dados_telefone">Telefone</string>
     <string name="dados_celular">Celular</string>
+    <string name="view_dados_nome">Como seu nome está salvo</string>
+    <string name="view_nome_edita">Digite o novo nome</string>
+    <string name="view_senha_edita">Digite uma nova senha entre 6 e 16 caracteres</string>
+    <string name="view_senha_repete">Repita a senha</string>
+    <string name="view_dados_telefone">Como seu telefone está salvo</string>
+    <string name="telefone_hint">Telefone</string>
+    <string name="view_telefone_edita">Digite o novo número de telefone</string>
+    <string name="view_dados_celular">Como o seu celular está salvo</string>
+    <string name="celular_hint">Celular</string>
+    <string name="view_celular_edita">Digite o novo número de celular</string>
+    <string name="email_hint">example@example.com</string>
+    <string name="view_email_edit">Digite o novo endereço de email</string>
+    <string name="view_dados_email">Como o seu email está salvo</string>
+    <string name="sobrenome_hint">Sobrenome</string>
+    <string name="view_sobrenome_edita">Digite o novo sobrenome</string>
+    <string name="view_welcome">Bem Vindo</string>
+    <string name="dados_email">Email</string>
 </resources>

@@ -9,19 +9,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".home" />
-        <activity android:name=".perfil" />
-        <activity android:name=".Dados" />
-        <activity android:name=".Tarifas" />
-        <activity android:name=".fatura" />
-        <activity android:name=".faturas_quitadas"></activity>
+        <activity
+            android:name=".home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perfil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tarifas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fatura"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".faturas_quitadas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CertidaoPositiva"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoNome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoSenha"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoTelefone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoCelular"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoEmail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Noticias"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Denuncias"></activity>
     </application>
 
 </manifest>
