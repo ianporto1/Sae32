@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
 
@@ -111,7 +112,13 @@ public class home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.joinville.udesc.br/portal/professores/claudinei/materiais/Exemplo_de_Plano_de_Software.docx"));
                 startActivity(intent);
+                Intent inte = new Intent(home.this, home.class);
+                startActivity(inte);
+                alert("Arquivo baixado com Sucesso!!!");
             }
         });
+    }
+    private void alert(String s){
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }
 }
