@@ -43,7 +43,7 @@ public class home extends AppCompatActivity {
 
         Button abreTarifa = findViewById(R.id.home_button_tarifa);
 
-        abreTarifa.setOnClickListener(new View.OnClickListener() {
+                abreTarifa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent tarifa = new Intent(home.this, Tarifas.class);
@@ -86,6 +86,16 @@ public class home extends AppCompatActivity {
             public void onClick(View v){
                 Intent noticias = new Intent(home.this, Noticias.class);
                 startActivity(noticias);
+            }
+        });
+
+        Button denuncias = findViewById(R.id.button_denuncias);
+
+        denuncias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent denuncias = new Intent(home.this, Denuncias.class);
+                startActivity(denuncias);
             }
         });
     }

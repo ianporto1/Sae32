@@ -53,7 +53,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="7dp"
         android:background="@drawable/login_box"
         android:ems="10"
         android:hint="@string/name_hint"
