@@ -57,7 +57,7 @@
         android:background="@drawable/login_box"
         android:ems="10"
         android:hint="@string/mat_hint"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:paddingStart="200px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
