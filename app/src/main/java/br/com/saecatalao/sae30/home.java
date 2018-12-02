@@ -1,7 +1,9 @@
 package br.com.saecatalao.sae30;
 
+import android.app.DownloadManager;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +14,7 @@ import android.widget.TextView;
 import static br.com.saecatalao.sae30.Declaracoes.user1;
 
 public class home extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +99,18 @@ public class home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent denuncias = new Intent(home.this, Denuncias.class);
                 startActivity(denuncias);
+            }
+        });
+
+        //TESTE DOWNLOAD
+
+        Button down = findViewById(R.id.button_hiperlink);
+
+        down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.joinville.udesc.br/portal/professores/claudinei/materiais/Exemplo_de_Plano_de_Software.docx"));
+                startActivity(intent);
             }
         });
     }
