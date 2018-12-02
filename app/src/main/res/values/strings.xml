@@ -25,4 +25,6 @@
     <string name="view_sobrenome_edita">Digite o novo sobrenome</string>
     <string name="view_welcome">Bem Vindo</string>
     <string name="dados_email">Email</string>
+    <string name="noticias">Notícias</string>
+    <string name="denuncias">Denúncias</string>
 </resources>
