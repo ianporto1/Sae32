@@ -10,6 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
+import static br.com.saecatalao.sae30.MainActivity.indice;
+import static br.com.saecatalao.sae30.MainActivity.lista;
 
 public class EditarDadoEmail extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class EditarDadoEmail extends AppCompatActivity {
         setContentView(R.layout.activity_editar_dado_email);
 
         TextView emailView = findViewById(R.id.text_display_email);
-        emailView.setText(user1.email);
+        emailView.setText(lista.get(indice).email);
 
         Button emailVoltar = findViewById(R.id.button_editar_email_voltar);//Declaração do botão para finalizar a atividade e voltar à tela anterior
 
@@ -47,7 +49,7 @@ public class EditarDadoEmail extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         TextView editEmail = findViewById(R.id.edit_email);
                         String editE = editEmail.getText().toString();
-                        user1.setEmail(editE);
+                        lista.get(indice).setEmail(editE);
                         alert("Salvo com sucesso!");
                         finish();
                     }

@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
+import static br.com.saecatalao.sae30.MainActivity.indice;
+import static br.com.saecatalao.sae30.MainActivity.lista;
 
 public class EditarDadoTelefone extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class EditarDadoTelefone extends AppCompatActivity {
         setContentView(R.layout.activity_editar_dado_telefone);
 
         TextView telefoneView = findViewById(R.id.text_display_telefone);
-        String tel = Integer.toString(user1.telefone);//Casting de integer para string porque setText só compreende Strings
+        String tel = Integer.toString(lista.get(indice).telefone);//Casting de integer para string porque setText só compreende Strings
         telefoneView.setText(tel);
 
         Button telefoneVoltar = findViewById(R.id.button_editar_telefone_voltar);
@@ -49,7 +51,7 @@ public class EditarDadoTelefone extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         TextView editTelefone = findViewById(R.id.edit_telefone);
                         int editT = Integer.parseInt(editTelefone.getText().toString());//Casting de String para integer porque a variavel telefone é do tipo integer
-                        user1.setTelefone(editT);
+                        lista.get(indice).setTelefone(editT);
                         alert("Salvo com sucesso");
                         finish();
                     }

@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
+import static br.com.saecatalao.sae30.MainActivity.indice;
+import static br.com.saecatalao.sae30.MainActivity.lista;
 
 public class EditarDadoNome extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class EditarDadoNome extends AppCompatActivity {
         setContentView(R.layout.activity_editar_dado_nome);
 
         TextView nomeView = findViewById(R.id.text_display_nome);
-        nomeView.setText(user1.nome + " " + user1.sobrenome);
+        nomeView.setText(lista.get(indice).nome + " " + lista.get(indice).sobrenome);
 
         Button nomeVoltar = findViewById(R.id.button_editar_nome_voltar);
 
@@ -48,10 +50,10 @@ public class EditarDadoNome extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         TextView editNome = findViewById(R.id.edit_nome);
                         String editN = editNome.getText().toString();
-                        user1.setNome(editN);
+                        lista.get(indice).setNome(editN);
                         TextView editSNome = findViewById(R.id.edit_sobrenome);
                         String editSN = editSNome.getText().toString();
-                        user1.setSobrenome(editSN);
+                        lista.get(indice).setSobrenome(editSN);
                         alert("Salvo com sucesso!");
                         finish();
                     }

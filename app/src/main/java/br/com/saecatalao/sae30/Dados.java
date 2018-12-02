@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
+import static br.com.saecatalao.sae30.MainActivity.indice;
+import static br.com.saecatalao.sae30.MainActivity.lista;
 
 public class Dados extends AppCompatActivity {
 
@@ -19,28 +21,28 @@ public class Dados extends AppCompatActivity {
         //Declaração IDs e caminhos para buscar as informações no objeto e imprimir nos text view
         TextView show;
         show = findViewById(R.id.view_nome);
-        show.setText(user1.getNome() + " " + user1.getSobrenome());
+        show.setText(lista.get(indice).nome + " " + lista.get(indice).sobrenome);
 
         show = findViewById(R.id.view_mat);
-        String mat = Integer.toString(user1.matricula);//Casting para String porque setText não compreende Integers
+        String mat = Integer.toString(lista.get(indice).matricula);//Casting para String porque setText não compreende Integers
         show.setText(mat);
 
         show = findViewById(R.id.view_tel);
-        String tel = Integer.toString(user1.getTelefone());
+        String tel = Integer.toString(lista.get(indice).telefone);
         show.setText(tel);
 
         show = findViewById(R.id.view_cel);
-        String cel = Integer.toString(user1.getCelular());
+        String cel = Integer.toString(lista.get(indice).celular);
         show.setText(cel);
 
         show = findViewById(R.id.view_email);
-        show.setText(user1.getEmail());
+        show.setText(lista.get(indice).email);
 
         show = findViewById(R.id.view_ent);
-        show.setText(user1.entrega);
+        show.setText(lista.get(indice).entrega);
 
         show = findViewById(R.id.view_venc);
-        show.setText(user1.vencimento);
+        show.setText(lista.get(indice).vencimento);
 
         Button voltarPerfil = findViewById(R.id.button_dados_voltar);//Declaração do botão para finalizar a atividade e voltar à tela anterior
 

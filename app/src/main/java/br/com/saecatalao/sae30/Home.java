@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
+import static br.com.saecatalao.sae30.MainActivity.indice;
+import static br.com.saecatalao.sae30.MainActivity.lista;
 
 public class Home extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         final TextView nomeHome = findViewById(R.id.text_show_nome);
-        nomeHome.setText(user1.getNome());
+        nomeHome.setText(lista.get(indice).nome);
 
         Button abrePerfil = findViewById(R.id.home_button_perfil);
 

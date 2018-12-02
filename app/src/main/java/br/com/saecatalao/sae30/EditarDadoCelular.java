@@ -10,6 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
+import static br.com.saecatalao.sae30.MainActivity.indice;
+import static br.com.saecatalao.sae30.MainActivity.lista;
 
 public class EditarDadoCelular extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class EditarDadoCelular extends AppCompatActivity {
         setContentView(R.layout.activity_editar_dado_celular);
 
         TextView celularView = findViewById(R.id.text_display_celular);
-        String cel = Integer.toString(user1.celular);//Casting de integer para string porque setText só compreende Strings
+        String cel = Integer.toString(lista.get(indice).celular);//Casting de integer para string porque setText só compreende Strings
         celularView.setText(cel);
 
         Button celularVoltar = findViewById(R.id.button_editar_celular_voltar);//Declaração do botão para finalizar a atividade e voltar à tela anterior
@@ -48,7 +50,7 @@ public class EditarDadoCelular extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         TextView editCelular = findViewById(R.id.edit_celular);
                         int editC = Integer.parseInt(editCelular.getText().toString());//Casting de String para integer porque a variavel celular é do tipo integer
-                        user1.setCelular(editC);
+                        lista.get(indice).setCelular(editC);
                         alert("Salvo com sucesso!");
                         finish();
                     }
