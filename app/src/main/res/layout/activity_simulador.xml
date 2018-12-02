@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fatura"
-    android:background="@drawable/fatura_segundavia">
+    android:background="@drawable/perfil"
+    tools:context=".Simulador">
 
     <Button
-        android:id="@+id/button_fatura_voltar"
+        android:id="@+id/button_simulador_voltar"
         android:layout_width="41dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
@@ -17,5 +17,4 @@
         android:background="@drawable/botao_voltar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>

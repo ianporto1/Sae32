@@ -1,21 +1,20 @@
 package br.com.saecatalao.sae30;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class fatura extends AppCompatActivity {
+public class Simulador extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fatura);
+        setContentView(R.layout.activity_simulador);
 
-        Button voltarHome = findViewById(R.id.button_fatura_voltar);
+        Button simVoltar = findViewById(R.id.button_simulador_voltar);
 
-        voltarHome.setOnClickListener(new View.OnClickListener() {
+        simVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

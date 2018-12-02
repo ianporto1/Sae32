@@ -51,6 +51,16 @@ public class perfil extends AppCompatActivity {
                 startActivity(certidao);
             }
         });
+
+        Button abrirParcelamento = findViewById(R.id.perfil_button_parcelamento);
+
+        abrirParcelamento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent parcelamento = new Intent(perfil.this, Parcelamento.class);
+                startActivity(parcelamento);
+            }
+        });
     }
 
 

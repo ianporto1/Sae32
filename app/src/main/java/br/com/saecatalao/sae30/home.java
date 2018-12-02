@@ -51,6 +51,16 @@ public class home extends AppCompatActivity {
             }
         });
 
+        Button abreSimulador = findViewById(R.id.home_button_simulador);
+
+        abreSimulador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent simulador = new Intent(home.this, Simulador.class);
+                startActivity(simulador);
+            }
+        });
+
         Button logOut = findViewById(R.id.home_button_logout);
 
         logOut.setOnClickListener(new View.OnClickListener() {

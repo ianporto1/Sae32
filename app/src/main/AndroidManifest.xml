@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.saecatalao.sae30">
 
+    <supports-screens android:anyDensity="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,33 +20,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".home"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".perfil"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Dados"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Tarifas"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".fatura"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".faturas_quitadas"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CertidaoPositiva"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditarDados"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditarDadoNome"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditarDadoTelefone"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditarDadoCelular"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditarDadoEmail"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perfil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tarifas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fatura"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".faturas_quitadas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CertidaoPositiva"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoNome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoTelefone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoCelular"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditarDadoEmail"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Simulador" />
+        <activity android:name=".Parcelamento"></activity>
     </application>
 
-    <supports-screens
-        android:anyDensity="true"
-        ></supports-screens>
 </manifest>
