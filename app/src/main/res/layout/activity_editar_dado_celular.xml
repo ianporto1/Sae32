@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/button_editar_celular_voltar"
-        android:layout_width="41dp"
-        android:layout_height="38dp"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
