@@ -27,4 +27,8 @@
     <string name="dados_email">Email</string>
     <string name="noticias">Notícias</string>
     <string name="denuncias">Denúncias</string>
+    <string name="enviar">Enviar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="bairro">Bairro</string>
+    <string name="motivo">Motivo</string>
 </resources>
