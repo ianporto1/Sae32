@@ -63,6 +63,26 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        Button abreNoticia = findViewById(R.id.home_button_noticia);
+
+        abreNoticia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent noticia = new Intent(Home.this, Noticias.class);
+                startActivity(noticia);
+            }
+        });
+
+        Button abreDenuncia = findViewById(R.id.home_button_denuncia);
+
+        abreDenuncia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent denuncia = new Intent(Home.this, Denuncia.class);
+                startActivity(denuncia);
+            }
+        });
+
         Button logOut = findViewById(R.id.home_button_logout);
 
         logOut.setOnClickListener(new View.OnClickListener() {

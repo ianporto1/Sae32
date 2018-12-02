@@ -2,6 +2,8 @@
     <string name="app_name">Sae3.0</string>
     <string name="name_hint">Nome</string>
     <string name="mat_hint">Matrícula</string>
+    <string name="noticias">Notícias</string>
+    <string name="denuncias">Denúncias</string>
     <string name="dados_cabecalho">Dados da sua Conta</string>
     <string name="dados_nome">Nome</string>
     <string name="dados_matricula">Matricula</string>

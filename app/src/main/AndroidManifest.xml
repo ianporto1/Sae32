@@ -57,7 +57,9 @@
             android:name=".EditarDadoEmail"
             android:screenOrientation="portrait" />
         <activity android:name=".Simulador" />
-        <activity android:name=".Parcelamento"></activity>
+        <activity android:name=".Parcelamento" />
+        <activity android:name=".Noticias" />
+        <activity android:name=".Denuncia"></activity>
     </application>
 
 </manifest>
