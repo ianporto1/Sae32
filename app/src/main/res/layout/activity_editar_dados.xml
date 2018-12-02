@@ -19,21 +19,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_editar_senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/botao_senha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_editar_nome" />
-
-    <Button
         android:id="@+id/button_editar_telefone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,8 +29,9 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/botao_telefone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_editar_senha" />
+        app:layout_constraintTop_toBottomOf="@+id/button_editar_nome" />
 
     <Button
         android:id="@+id/button_editar_celular"

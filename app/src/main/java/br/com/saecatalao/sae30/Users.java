@@ -1,14 +1,13 @@
 package br.com.saecatalao.sae30;
 
 public class Users {
-    String nome, email, senha, sobrenome, entrega, vencimento;
+    String nome, email, sobrenome, entrega, vencimento;
     int telefone, celular, matricula;
 
-    public Users(String n, String sn, String e, String s, String ent, String v, int t, int c, int m){
+    public Users(String n, String sn, String e, String ent, String v, int t, int c, int m){
         nome = n;
         sobrenome = sn;
         email = e;
-        senha = s;
         telefone = t;
         celular = c;
         matricula = m;
@@ -30,14 +29,6 @@ public class Users {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
     }
 
     public int getTelefone() {

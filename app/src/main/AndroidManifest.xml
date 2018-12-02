@@ -35,8 +35,6 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".EditarDadoNome"
             android:screenOrientation="portrait"/>
-        <activity android:name=".EditarDadoSenha"
-            android:screenOrientation="portrait"/>
         <activity android:name=".EditarDadoTelefone"
             android:screenOrientation="portrait"/>
         <activity android:name=".EditarDadoCelular"

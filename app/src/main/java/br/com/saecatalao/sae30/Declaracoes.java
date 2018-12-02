@@ -5,7 +5,6 @@ public class Declaracoes {
     * Nome
     * Sobrenome
     * Email
-    * Senha
     * Entrega
     * Vencimento
     * Telefone
@@ -13,7 +12,7 @@ public class Declaracoes {
     * e Matricula
     */
 
-    static Users user1 = new Users("Allan", "Leite Peres","allan.peres.97@hotmail.com", "123456", "Residência","Dia 10",33615829, 81793118, 1234567);
+    static Users user1 = new Users("Allan", "Leite Peres","allan.peres.97@hotmail.com","Residência","Dia 10",33615829, 81793118, 1234567);
 
     static Reclamacao r1 = new Reclamacao();
 

@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                TextView nomeLogin = findViewById(R.id.edit_login_nome);//Atribui ao text view que o valor no mesmo vai ser analizado para saber se é válido para efetuar ou não o login
-                String nLog = nomeLogin.getText().toString();
-                if(nLog.equals(user1.nome)){
+                TextView matLogin = findViewById(R.id.edit_login_matricula);//Atribui ao text view que o valor no mesmo vai ser analizado para saber se é válido para efetuar ou não o login
+                int mLog = Integer.parseInt(matLogin.getText().toString());
+                if(mLog == user1.matricula){
                     alert("Login realizado com sucesso");
                     Intent entrar = new Intent(MainActivity.this, home.class);//Variável intent para saber o caminho que iremos seguir para a transição de atividades
                     startActivity(entrar);//Inicia a atividade home
                 }else{
-                    alert("Nome de usuário incorreto");
+                    alert("Matrícula incorreta");
                 }
             }
         });

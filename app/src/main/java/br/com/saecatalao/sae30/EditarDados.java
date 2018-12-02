@@ -35,16 +35,6 @@ public class EditarDados extends AppCompatActivity {
             }
         });
 
-        Button editarSenha = findViewById(R.id.button_editar_senha);
-
-        editarSenha.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent senha = new Intent(EditarDados.this, EditarDadoSenha.class);
-                startActivity(senha);
-            }
-        });
-
         Button editarTelefone = findViewById(R.id.button_editar_telefone);
 
         editarTelefone.setOnClickListener(new View.OnClickListener() {
