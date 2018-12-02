@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class perfil extends AppCompatActivity {
+public class Perfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class perfil extends AppCompatActivity {
         abrirPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent perfil = new Intent(perfil.this, Dados.class);
+                Intent perfil = new Intent(Perfil.this, Dados.class);
                 startActivity(perfil);
             }
         });
@@ -37,7 +37,7 @@ public class perfil extends AppCompatActivity {
         abrirQuitadas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent quitadas = new Intent(perfil.this, faturas_quitadas.class);
+                Intent quitadas = new Intent(Perfil.this, FaturasQuitadas.class);
                 startActivity(quitadas);
             }
         });
@@ -47,7 +47,7 @@ public class perfil extends AppCompatActivity {
         abrirCertidao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent certidao = new Intent(perfil.this, CertidaoPositiva.class);
+                Intent certidao = new Intent(Perfil.this, CertidaoPositiva.class);
                 startActivity(certidao);
             }
         });
@@ -57,7 +57,7 @@ public class perfil extends AppCompatActivity {
         abrirParcelamento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent parcelamento = new Intent(perfil.this, Parcelamento.class);
+                Intent parcelamento = new Intent(Perfil.this, Parcelamento.class);
                 startActivity(parcelamento);
             }
         });

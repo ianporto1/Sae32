@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class faturas_quitadas extends AppCompatActivity {
+public class Fatura extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_faturas_quitadas);
+        setContentView(R.layout.activity_fatura);
 
-        Button voltarPerfil = findViewById(R.id.button_quitadas_voltar);
+        Button voltarHome = findViewById(R.id.button_fatura_voltar);
 
-        voltarPerfil.setOnClickListener(new View.OnClickListener() {
+        voltarHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

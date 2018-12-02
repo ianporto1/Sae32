@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 int mLog = Integer.parseInt(matLogin.getText().toString());
                 if(mLog == user1.matricula){
                     alert("Login realizado com sucesso");
-                    Intent entrar = new Intent(MainActivity.this, home.class);//Variável intent para saber o caminho que iremos seguir para a transição de atividades
-                    startActivity(entrar);//Inicia a atividade home
+                    Intent entrar = new Intent(MainActivity.this, Home.class);//Variável intent para saber o caminho que iremos seguir para a transição de atividades
+                    startActivity(entrar);//Inicia a atividade Home
                 }else{
                     alert("Matrícula incorreta");
                 }

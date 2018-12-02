@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/perfil"
-    tools:context=".perfil">
+    tools:context=".Perfil">
 
     <LinearLayout
         android:layout_width="335dp"
@@ -62,7 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"></LinearLayout>
-    <!--fatura-->
+    <!--Fatura-->
     <Button
         android:id="@+id/perfil_button_fatura"
         android:layout_width="wrap_content"

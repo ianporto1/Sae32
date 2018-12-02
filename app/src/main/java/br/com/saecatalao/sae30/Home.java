@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import static br.com.saecatalao.sae30.Declaracoes.user1;
 
-public class home extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class home extends AppCompatActivity {
         abrePerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent perfil = new Intent(home.this, perfil.class);
+                Intent perfil = new Intent(Home.this, Perfil.class);
                 startActivity(perfil);
             }
         });
@@ -36,7 +36,7 @@ public class home extends AppCompatActivity {
         abreFatura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent fatura = new Intent(home.this, fatura.class);
+                Intent fatura = new Intent(Home.this, Fatura.class);
                 startActivity(fatura);
             }
         });
@@ -46,7 +46,7 @@ public class home extends AppCompatActivity {
         abreTarifa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tarifa = new Intent(home.this, Tarifas.class);
+                Intent tarifa = new Intent(Home.this, Tarifas.class);
                 startActivity(tarifa);
             }
         });
@@ -56,7 +56,7 @@ public class home extends AppCompatActivity {
         abreSimulador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent simulador = new Intent(home.this, Simulador.class);
+                Intent simulador = new Intent(Home.this, Simulador.class);
                 startActivity(simulador);
             }
         });
@@ -66,12 +66,12 @@ public class home extends AppCompatActivity {
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             /*public void onClick(View v) {
-                Intent intent = new Intent(home.this, MainActivity.class);
+                Intent intent = new Intent(Home.this, MainActivity.class);
                 finish();
             }*/
 
             public void onClick(View v){
-                AlertDialog.Builder a_builder = new AlertDialog.Builder(home.this);
+                AlertDialog.Builder a_builder = new AlertDialog.Builder(Home.this);
                 a_builder.setMessage("Deseja realmente sair da Conta?").setCancelable(false)
                         .setNegativeButton("Não", new DialogInterface.OnClickListener() {
                             @Override

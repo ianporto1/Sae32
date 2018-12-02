@@ -21,10 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home"
+            android:name=".Home"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".perfil"
+            android:name=".Perfil"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Dados"
@@ -33,10 +33,10 @@
             android:name=".Tarifas"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".fatura"
+            android:name=".Fatura"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".faturas_quitadas"
+            android:name=".FaturasQuitadas"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CertidaoPositiva"

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/home"
-    tools:context=".home">
-    <!--que preenchem a página home-->
+    tools:context=".Home">
+    <!--que preenchem a página Home-->
 
     <Button
         android:id="@+id/home_button_fatura"
@@ -140,5 +140,5 @@
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
-    <!---Botões que preenchem a página home-->
+    <!---Botões que preenchem a página Home-->
 </android.support.constraint.ConstraintLayout>
