@@ -102,23 +102,5 @@ public class home extends AppCompatActivity {
                 startActivity(denuncias);
             }
         });
-
-        //TESTE DOWNLOAD
-
-        Button down = findViewById(R.id.button_hiperlink);
-
-        down.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.joinville.udesc.br/portal/professores/claudinei/materiais/Exemplo_de_Plano_de_Software.docx"));
-                startActivity(intent);
-                Intent inte = new Intent(home.this, home.class);
-                startActivity(inte);
-                alert("Arquivo baixado com Sucesso!!!");
-            }
-        });
-    }
-    private void alert(String s){
-        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }
 }
