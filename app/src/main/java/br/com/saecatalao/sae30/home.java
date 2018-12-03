@@ -77,7 +77,7 @@ public class home extends AppCompatActivity {
         });
 
 
-        //criação do botão para abrir o layot notificação
+        //criação do botão para abrir o layot notificação NAO TA FUNCIONANDO
 
         Button abreNotificao =  findViewById(R.id.btn_notificacao);
 
@@ -85,8 +85,21 @@ public class home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intencao = new Intent(home.this, Notificacao.class);
-                startActivity(intencao);
+                Intent intent = new Intent(home.this, Notificacao.class);
+
+                startActivity(intent);
+
+            }
+        });
+
+        Button abreDenuncia = findViewById(R.id.btn_denuncia);
+
+        abreDenuncia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent  = new Intent(home.this,Denuncia.class);
+                startActivity(intent);
 
             }
         });

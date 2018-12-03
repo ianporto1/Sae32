@@ -15,4 +15,16 @@
     <string name="view_dados_telefone">Como seu telefone está salvo</string>
     <string name="telefone_hint">Telefone</string>
     <string name="view_telefone_edita">Digite o novo número de telefone</string>
+    <string name="notificacao_string">Notificações</string>
+    <string name="den_ncia">denúncia</string>
+    <string-array name="bairros">
+        <item>Bairro 1</item>
+        <item>Bairro 2</item>
+        <item>Bairro 3</item>
+    </string-array>
+    <string-array name="motivo">
+        <item>Motivo 1</item>
+        <item>Motivo 2</item>
+        <item>Lixo</item>
+    </string-array>
 </resources>

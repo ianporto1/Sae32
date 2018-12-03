@@ -27,6 +27,8 @@
         <activity android:name=".EditarDadoNome" />
         <activity android:name=".EditarDadoSenha" />
         <activity android:name=".EditarDadoTelefone"></activity>
+        <activity android:name=".Notificacao"></activity>
+        <activity android:name=".Denuncia"></activity>
     </application>
 
 </manifest>
