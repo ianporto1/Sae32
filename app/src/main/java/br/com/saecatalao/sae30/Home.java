@@ -2,6 +2,7 @@ package br.com.saecatalao.sae30;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -80,6 +81,16 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent denuncia = new Intent(Home.this, Denuncia.class);
                 startActivity(denuncia);
+            }
+        });
+
+        Button linkSae = findViewById(R.id.button_link_sae);
+
+        linkSae.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://saecatalao.com.br/"));
+                startActivity(intent);
             }
         });
 
