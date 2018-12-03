@@ -10,6 +10,9 @@
     <string name="dados_vencimento">Vencimento</string>
     <string name="dados_entrega">Entrega</string>
     <string name="dados_telefone">Telefone</string>
+    <string name="valor_lido">Digite a medição da última fatura</string>
+    <string name="valor_atual">Digite o valor atual do seu relógio</string>
+    <string name="valor_lido_hint">Valor</string>
     <string name="dados_celular">Celular</string>
     <string name="view_dados_nome">Como seu nome está salvo</string>
     <string name="view_nome_edita">Digite o novo nome</string>
